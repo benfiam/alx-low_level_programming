@@ -1,12 +1,22 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+* main - Print the alphabet in lowercase letters, except for e and q
 *
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+		char aphabet;
+
+		for (aphabet = 'a'; aphabet <= 'z'; aphabet++)
+		{
+		if (aphabet != 'e' && aphabet != 'q')
+		putchar(aphabet);
+		}
+		putchar('\n');
+
 	return (0);
 }
+
+
